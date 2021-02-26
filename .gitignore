@@ -2,3 +2,4 @@
 /_scratch
 /build/
 /vendor/
+composer.lock
