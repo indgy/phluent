@@ -1,6 +1,16 @@
 # Phluent
 
-A dependency free lightweight fluent SQL query builder using PDO. 
+A dependency free lightweight fluent SQL query builder using PDO allowing you to interact with your database as follows: 
+
+```php
+$query->select('title, year')
+    ->from('movies')
+    ->where(function($query) {
+        $query->where('title', 'like' ,'A %');
+        $query->orWhere('title', 'like' ,'The %');
+    })
+    ->orderBy('year');
+```
 
 <!-- An extension handling relationships is planned for release, this uses the Data Mapper & Entity paradigm rather than Active Record. -->
 
