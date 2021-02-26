@@ -15,10 +15,10 @@
       <directory>./tests/docs</directory>
     </testsuite>
     <testsuite name="QueryUnitTests">
-      <directory>./tests/unit/query</directory>
+      <directory>./tests/unit/Query</directory>
     </testsuite>
     <testsuite name="DBUnitTests">
-      <directory>./tests/unit/db</directory>
+      <directory>./tests/unit/DB</directory>
     </testsuite>
   </testsuites>
   <filter>
