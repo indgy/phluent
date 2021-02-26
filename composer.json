@@ -10,5 +10,17 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Phluent\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phluent\\Tests\\Assets\\": "tests/assets"
+        }
+    }
 }
