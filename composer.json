@@ -22,5 +22,11 @@
         "psr-4": {
             "Phluent\\Tests\\Assets\\": "tests/assets"
         }
+    },
+    "scripts": {
+        "test-all": "phpunit",
+        "test-docs": "phpunit",
+        "test-query": "phpunit"
+        
     }
 }
