@@ -25,8 +25,8 @@
     },
     "scripts": {
         "test-all": "phpunit",
-        "test-docs": "phpunit",
-        "test-query": "phpunit"
-        
+        "test-docs": "phpunit --testsuite DocsExampleTests",
+        "test-query": "phpunit --testsuite QueryUnitTests"
+
     }
 }
