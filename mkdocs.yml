@@ -1,0 +1,52 @@
+site_name: Phluent Docs
+site_description: Documentation for the Phluent component
+copyright: ©2021 <a href="https://indgy.uk">Indgy</a> 
+use_directory_urls: true
+docs_dir: src/docs
+site_dir: docs/
+extra_css: 
+  - style.css
+plugins:
+  - search
+  - simple:
+      include_folders: ["src"]
+      ignore_folders: [""]
+      ignore_hidden: True
+      include_extensions: [".jpeg", ".jpg", ".png", ".pdf"]
+      merge_docs_dir: True
+markdown_extensions:
+  - admonition
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+  - php
+nav:
+  - Introduction: index.md
+  - "Getting Started": getting-started.md
+  - Query:
+    - "Using Query": "query.md"
+    - "Examples": query/examples.md
+    - "Selecting rows": "query/selecting.md"
+    - "Inserting rows": "query/inserting.md"
+    - "Updating rows": "query/updating.md"
+    - "Deleting rows": "query/deleting.md"
+    - "Debugging": "query/debugging.md"
+    - "Clauses":
+        - "Distinct": query/clauses/distinct.md
+        - "Join": query/clauses/join.md
+        - "Where": query/clauses/where.md
+        - "Group By": query/clauses/group-by.md
+        - "Order By": query/clauses/order-by.md
+        - "Limit": query/clauses/limit.md
+        - "Offset": query/clauses/offset.md
+        - "Unions": query/clauses/unions.md
+        - "Aggregates": query/clauses/aggregates.md
+    - "Pagination": query/clauses/pagination.md
+      
+  - DB:
+    - "Using DB": "db.md"
+    - "Performing Queries": db/performing-queries.md
+    - "Changed Query methods": db/changed-query-methods.md
+    - Transactions: db/transactions.md
+    - Logging: db/logging.md

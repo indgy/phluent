@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+  backupGlobals="false"
+  backupStaticAttributes="false"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  processIsolation="false"
+  stopOnFailure="false"
+  colors="true"
+  bootstrap="tests/bootstrap.php"
+>
+  <testsuites>
+    <testsuite name="Development Tests">
+      <directory>./tests/dev</directory>
+    </testsuite>
+
+    <testsuite name="Unit Tests">
+      <directory>./tests/unit</directory>
+    </testsuite>
+
+    <testsuite name="Documentation Tests">
+      <directory>./tests/docs</directory>
+    </testsuite>
+
+    <testsuite name="Integration Tests">
+      <directory>./tests/integration</directory>
+    </testsuite>
+
+  </testsuites>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+       <directory suffix=".php">src</directory>
+    </whitelist>
+  </filter>
+  <logging>
+    <log type="junit" target="build/junit.xml"/>
+    <log type="coverage-html" target="build/coverage"/>
+  </logging>
+</phpunit>
