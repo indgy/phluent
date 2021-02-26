@@ -25,6 +25,8 @@
     },
     "scripts": {
         "test-all": "phpunit --coverage-clover build/logs/clover.xml",
+        "test-db": "phpunit --testsuite DBUnitTests --coverage-clover build/logs/clover.xml",
+        "test-docs": "phpunit --testsuite DocsExampleTests --coverage-clover build/logs/clover.xml",
         "test-query": "phpunit --testsuite DocsExampleTests --testsuite QueryUnitTests --coverage-clover build/logs/clover.xml",
         "make-dist": "cat src/functions.php src/Query.php src/DB.php >> dist/Phluent.php"
     }
