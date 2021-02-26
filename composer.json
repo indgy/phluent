@@ -26,7 +26,7 @@
     "scripts": {
         "test-all": "phpunit",
         "test-docs": "phpunit --testsuite DocsExampleTests",
-        "test-query": "phpunit --testsuite QueryUnitTests"
-
+        "test-query": "phpunit --testsuite QueryUnitTests",
+        "make-dist": "cat src/functions.php src/Query.php src/DB.php >> dist/Phluent.php"
     }
 }
