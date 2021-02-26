@@ -10,13 +10,13 @@ class DBAggregatesTest extends \PHPUnit\Framework\TestCase
 {
     protected $config = [
         'driver' => 'mysql',
-        'host' => '',
+        'host' => '127.0.0.1',
         'port' => '',
-        'database' => 'test_db',
-        'username' => 'local',
-        'password' => 'password',
+        'database' => 'phluent_test',
+        'username' => 'travis',
+        'password' => '',
         'charset' => 'utf8mb4',
-        'socket' => '/opt/local/var/run/mariadb-10.2/mysqld.sock',
+        // 'socket' => '/opt/local/var/run/mariadb-10.2/mysqld.sock',
     ];
 
 

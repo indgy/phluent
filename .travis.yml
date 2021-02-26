@@ -5,14 +5,16 @@ php:
   - 7.4
   - 8.0
 
-# services:
-#  - mysql
+services:
+ - mysql
 
 before_script: 
   - composer install
+  - mysql -e "CREATE DATABASE IF NOT EXISTS phluent_test;"
 
 script: 
   - composer run-script test-query
+  
 
 after_script:
   - wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.4.3/php-coveralls.phar
