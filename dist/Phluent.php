@@ -487,7 +487,7 @@ class Query
 		{
             $nested = new Query();
             $nested->table($this->getFromClause());
-            call_user_func_array($reference, ['q' => $nested]);
+            call_user_func_array($reference, [$nested]);
 			$this->having[] = [
     			'logic' => (is_null($logic)) ? 'AND' : $logic,
                 'negate' => $negate,
@@ -614,7 +614,7 @@ class Query
 		{
             $nested = new Query();
             $nested->table($this->getFromClause());
-            call_user_func_array($reference, ['q' => $nested]);
+            call_user_func_array($reference, [$nested]);
 			$this->where[] = [
     			'logic' => (is_null($logic)) ? 'AND' : $logic,
                 'type' => "",
@@ -796,7 +796,7 @@ class Query
 
         $nested = new Query();
         $nested->table($this->getFromClause());
-        call_user_func_array($callable, ['q' => $nested]);
+        call_user_func_array($callable, [$nested]);
 		$this->where[] = [
 			'logic' => (is_null($logic)) ? 'AND' : "$logic",
             'type' => 'exists',
@@ -843,7 +843,7 @@ class Query
         // if values is callable, attach the Query object from callable
         if ($values instanceof Closure) {
             $sub = new Query();
-            call_user_func_array($values, ['q' => $sub]);
+            call_user_func_array($values, [$sub]);
             $values = $sub;
         }
         $this->where[] = array(
