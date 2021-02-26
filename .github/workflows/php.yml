@@ -35,13 +35,13 @@ jobs:
 
 
   unit-tests:
+    name: PHP Unit tests
+    with:
+      php_version: [
+        7.3
+        7.4
+        8.0
+      ]
     steps:
-      name: PHP Unit tests
-      with:
-        php_version: [
-          7.3
-          7.4
-          8.0
-        ]
       run: composer run-script test-docs
       run: composer run-script test-query
