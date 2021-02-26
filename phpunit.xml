@@ -11,22 +11,9 @@
   bootstrap="tests/bootstrap.php"
 >
   <testsuites>
-    <testsuite name="Development Tests">
-      <directory>./tests/dev</directory>
-    </testsuite>
-
     <testsuite name="Unit Tests">
       <directory>./tests/unit</directory>
     </testsuite>
-
-    <testsuite name="Documentation Tests">
-      <directory>./tests/docs</directory>
-    </testsuite>
-
-    <testsuite name="Integration Tests">
-      <directory>./tests/integration</directory>
-    </testsuite>
-
   </testsuites>
   <filter>
     <whitelist processUncoveredFilesFromWhitelist="true">
