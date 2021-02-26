@@ -1,5 +1,7 @@
 # Phluent
 
+[![Build Status](https://travis-ci.org/indgy/phluent.svg?branch=main)](https://travis-ci.org/indgy/phluent)
+
 A dependency free lightweight fluent SQL query builder using PDO allowing you to interact with your database as follows: 
 
 ```php
