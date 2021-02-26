@@ -35,7 +35,7 @@ jobs:
 
 
   unit-tests:
-    name: PHP Unit tests
+    name: Unit tests
     with:
       php_version: [
         7.3
@@ -43,5 +43,8 @@ jobs:
         8.0
       ]
     steps:
-      run: composer run-script test-docs
-      run: composer run-script test-query
+      - name: Documentation example tests
+        run: composer run-script test-docs
+
+      - name: Query tests
+        run: composer run-script test-query
