@@ -23,6 +23,9 @@
             "Phluent\\Tests\\Assets\\": "tests/assets"
         }
     },
+    "require": {
+        "php": "^7.3||^8.0"
+    },
     "scripts": {
         "test-all": "phpunit --coverage-clover build/logs/clover.xml",
         "test-db": "phpunit --testsuite DBUnitTests --coverage-clover build/logs/clover.xml",
