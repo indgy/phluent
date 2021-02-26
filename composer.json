@@ -24,9 +24,8 @@
         }
     },
     "scripts": {
-        "test-all": "phpunit",
-        "test-docs": "phpunit --testsuite DocsExampleTests",
-        "test-query": "phpunit --testsuite QueryUnitTests",
+        "test-all": "phpunit --coverage-clover clover.xml",
+        "test-query": "phpunit --testsuite DocsExampleTests --testsuite QueryUnitTests --coverage-clover build/logs/clover.xml",
         "make-dist": "cat src/functions.php src/Query.php src/DB.php >> dist/Phluent.php"
     }
 }

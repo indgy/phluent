@@ -1,6 +1,8 @@
 # Phluent
 
 [![Build Status](https://travis-ci.org/indgy/phluent.svg?branch=main)](https://travis-ci.org/indgy/phluent)
+[![Coverage Status](https://coveralls.io/repos/github/indgy/phluent/badge.svg?branch=main)](https://coveralls.io/github/indgy/phluent?branch=main)
+
 
 A dependency free lightweight fluent SQL query builder using PDO allowing you to interact with your database as follows: 
 

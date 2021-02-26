@@ -8,11 +8,16 @@ php:
 # services:
 #  - mysql
 
-before_script: composer install
+before_script: 
+  - composer install
 
-script: composer run-script test-docs
+script: 
+  - composer run-script test-query
 
-script: composer run-script test-query
+after_script:
+  - wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.4.3/php-coveralls.phar
+  - chmod +x php-coveralls.phar
+  - php php-coveralls.phar --coverage_clover=build/logs/clover.xml -v
 
 notifications:
   email: "me@indgy.uk"
