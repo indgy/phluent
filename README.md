@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/indgy/phluent/badge.svg?branch=main)](https://coveralls.io/github/indgy/phluent?branch=main)
 
 
-A dependency free lightweight fluent SQL query builder using PDO allowing you to interact with your database as follows: 
+A dependency free lightweight fluent SQL query builder using PDO similar to Eloquent, allows you to query your database fluently: 
 
 ```php
 $query->select('title, year')
