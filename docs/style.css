@@ -1,0 +1,29 @@
+.language-php {
+  color:#36C !important;
+}
+.hljs-comment {
+  color:#666;
+}
+.hljs-function {
+  color:#c90;
+}
+.hljs-keyword {
+  color:#609;
+}
+.hljs-params {
+  color:#333;
+}
+.hljs-string {
+  color:#282;
+}
+
+table {
+  min-width:100%;
+  margin-bottom:1rem;
+}
+table th {
+  padding:0.5rem 0.25rem;
+}
+table td {
+  padding:0.25rem;
+}
