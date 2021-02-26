@@ -76,7 +76,7 @@ class FunctionsTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider provideStringsToSplit
      */
-    function testStrSplitCapsShould($expected, $str)
+    function testStrSplitCaps($expected, $str)
     {
         $this->assertEquals($expected, str_split_caps($str));
     }
