@@ -36,17 +36,8 @@ jobs:
 
   unit-tests:
     - name: Test against PHP 7.3
-      php_version: 7.3
-      run: composer run-script test-docs
-      run: composer run-script test-query
-
-    - name: Test against PHP 7.4
-      php_version: 7.4
-      run: composer run-script test-docs
-      run: composer run-script test-query
-
-    - name: Test against PHP 8.0
-      php_version: 8.0
+      with:
+        php_version: ${{ matrix.php-versions }}
       run: composer run-script test-docs
       run: composer run-script test-query
 
