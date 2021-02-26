@@ -2,7 +2,7 @@
 
 A dependency free lightweight fluent SQL query builder using PDO. 
 
-An extension handling relationships is planned for release, this uses the Data Mapper & Entity paradigm rather than Active Record.
+<!-- An extension handling relationships is planned for release, this uses the Data Mapper & Entity paradigm rather than Active Record. -->
 
 ## Install
 
