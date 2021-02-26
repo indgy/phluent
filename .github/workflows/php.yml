@@ -34,10 +34,13 @@ jobs:
       run: composer dump-autoload
 
 
-  unit-tests:
-    - name: Test against PHP 7.3
-      with:
-        php_version: ${{ matrix.php-versions }}
-      run: composer run-script test-docs
-      run: composer run-script test-query
-
+  run:
+    name: PHP Unit tests
+    run: composer run-script test-docs
+    run: composer run-script test-query
+    with:
+      php_version: [
+        7.3
+        7.4
+        8.0
+      ]
