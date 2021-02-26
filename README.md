@@ -27,7 +27,7 @@ require("/path/to/your/project/Phluent.php");
 
 ## Usage
 
-See the documentation for details.
+See the [documentation](https://indgy.github.io/phluent) for details.
 
 ## Change log
 
